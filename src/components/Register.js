@@ -30,7 +30,7 @@ const Register = () => {
 
         // Obtener la lista de carreras
         axiosInstance.get('/api/carreras')
-            .then(response => setCarreras(response.data))
+            .then(response => console.log(response.data))
             .catch(error => console.error('Error al obtener carreras:', error));
     }, []);
 
